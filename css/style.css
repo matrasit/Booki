@@ -23,6 +23,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+   
 }
 
 a {
@@ -120,9 +121,44 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* ce que j'ai ajouté pour le header */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    
+}
 
-
-
+nav a:hover{
+    border-top:3px solid #0065FC;
+    color: #0065FC;
+}
+.nav-links {
+    
+    display: flex;
+;   align-items: top;
+   
+}
+.nav-links a {
+    max-width: 244px;
+    max-height: 35px;
+    width: auto;
+    height: auto;
+    margin:0px 50px 0px 50px;
+    padding-top: 10px;
+}
+.logo-container {
+    width: 161px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    max-width: 61px;
+    max-height: 19px;
+    width: auto;
+    height: auto;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
