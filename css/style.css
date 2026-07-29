@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    
 }
 
 .main-container {
@@ -128,6 +129,7 @@ nav {
     
 }
 
+
 nav a:hover{
     border-top:3px solid #0065FC;
     color: #0065FC;
@@ -147,7 +149,7 @@ nav a:hover{
     padding-top: 10px;
 }
 .logo-container {
-    width: 161px;
+    width: 61px;
     height: 61px;
     display: flex;
     justify-content: center;
@@ -158,6 +160,60 @@ nav a:hover{
     max-height: 19px;
     width: auto;
     height: auto;
+}
+/* Section formulaire de recherche */
+.search-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.search-container, .info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+#location{
+    border: hidden;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 231px;
+    height: 49px
+}
+button{
+    border: hidden;
+    background-color: #0065FC;
+    color: white;
+    width: 132px;
+    height: 49px;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    
+    border-radius: 0px 15px 15px 0px;
+}
+#info-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;   
+    color: rgb(116, 192, 252);
+}
+#location-icon{
+    color: #000000;
+}
+#loupe-icon{
+    color: #FFFFFF;
+    
+    display: none;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
