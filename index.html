@@ -39,12 +39,18 @@
                         <label for="location" class="sr-only">Rechercher par ville</label>
                         <input type="search" name="location" id="location" placeholder="Entrez une destination">
 
-                        <button type="submit"> Rechercher <i class="fa-solid fa-magnifying-glass" id="loupe-icon" ></i></button>
+                        <button type="submit" id="search-button"> Rechercher <i class="fa-solid fa-magnifying-glass" id="loupe-icon" ></i></button>
                         
                     </form>
                 </div>
-                <div>
-                    <!-- filtre par type d'hébergement -->
+                <div class="filter-section">
+                    <h3>Filtres</h3>
+                    <div class="filter-container">
+                        <button class="filter-button"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                        <button class="filter-button"><i class="fa-solid fa-person"></i>Familial</button>
+                        <button class="filter-button"><i class="fa-solid fa-heart"></i>Romantique</button>
+                        <button class="filter-button"><i class="fa-solid fa-fire"></i>Nos pépites</button>
+                    </div>
                 </div>
                 <div class="info-container">
                     <i class="fa-solid fa-info fa-xs" id="info-icon"></i>
