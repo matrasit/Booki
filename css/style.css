@@ -165,6 +165,7 @@ nav a:hover{
 .search-section{
     display: flex;
     flex-direction: column;
+    gap: 35px;
     
 }
 .search-container, .info-container {
@@ -184,13 +185,12 @@ nav a:hover{
     width: 231px;
     height: 49px
 }
-button{
+#search-button{
     border: hidden;
     background-color: #0065FC;
     color: white;
     width: 132px;
     height: 49px;
-
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -215,7 +215,40 @@ button{
     
     display: none;
 }
-
+/* Section filtres */
+.filter-button{
+    
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    
+    border-radius: 25px;
+    border: 2px solid #d9d9d9;
+    padding: 4px 19px 4px 19px;
+    
+}
+.filter-container i{
+    color: #0065FC;
+    padding: 10px;
+    
+    
+}
+.filter-container{
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+.filter-section{
+    display: flex;
+    align-items: center;
+    
+    gap: 15px; 
+}
+.filter-button:hover{
+    background-color: #deebff;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
