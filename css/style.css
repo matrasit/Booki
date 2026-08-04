@@ -308,6 +308,25 @@ nav a:hover{
     padding: 30px;
     
 }
+/* partie footer */
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.footer-column{
+    width: 446px;
+    
+    
+}
+.footer-column ul{
+    list-style: none; 
+    padding: 0;
+}
+.footer-column li{
+    margin: 10px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
