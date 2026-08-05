@@ -371,6 +371,22 @@ h1{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /* taille carte activités */
+    .activités-cards img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+    .activités-cards .card{
+    width: 179px;
+    
+    }
+    /* footer */
+    .footer-container{
+    gap: 30px;
+    
+    }
 }
 
 /* Small devices (phones, less than 768px) */
