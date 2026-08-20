@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    
+    margin: 0;
 }
 
 .main-container {
@@ -128,8 +128,8 @@ nav {
     justify-content: space-between;   
 }
 .nav-links a:hover{
-    border-top:3px solid #0065FC;
-    color:#0065FC;
+    border-top-color: var(--main-color);
+    color: var(--main-color);
     
 }
 .nav-links {  
@@ -142,6 +142,7 @@ nav {
     height: auto;
     margin:0px 50px 0px 50px;
     padding-top: 10px;
+    border-top: 2px solid transparent;
 }
 .logo-container {
     width: 61px;
@@ -170,13 +171,13 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    
 }
 .search-form{
     display: flex;
 }
 #location{
-    border: hidden;
+    border: 1px solid var(--main-bg-color);
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -185,7 +186,7 @@ h1{
 }
 #search-button{
     border: hidden;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: white;
     width: 132px;
     height: 49px;
@@ -201,16 +202,26 @@ h1{
     align-items: center;
     width: 24px;
     height: 24px;
+    flex-shrink: 0;
     border: 1px solid #d9d9d9;
     border-radius: 50%;   
-    color: rgb(116, 192, 252);
+    color: var(--main-color);
 }
 #location-icon{
+    width: 50px;
+    height: 49px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
     color: #000000;
 }
 #loupe-icon{
     color: #FFFFFF;
-    
     display: none;
 }
 /* Section filtres */
@@ -258,6 +269,9 @@ h1{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.hebergements-cards .card-content {
+    padding: 0 15px 15px 15px;
+}
 .hebergements-cards a{
     width: calc((100% - 60px) / 3);
     
@@ -280,38 +294,45 @@ h1{
     text-align: left;
 }
 /* partie activités */
-.activités-cards img{
+.activites-cards img{
     width: 100%;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.activités-cards a{
+.activites-cards a{
     width: calc((100% - 90px) / 4);   
 }
-.activités-cards{
+.activites-cards{
     display: flex;
     flex-direction: row;
     gap: 30px;
     
 }
-.activités-a-Marseille{
+.activites-a-Marseille{
     display: flex;
     flex-direction: column;
     gap: 30px;
     
 }
-.activités-cards .card-content{
+.activites-cards .card-content{
     padding: 10px;
 }
-.activités-a-Marseille{
+.activites-a-Marseille{
     padding: 30px;
     
+}
+.activites-cards .card-title {
+    margin: 0;
+}
+.activites-cards .card-content {
+    padding: 20px 19px;
 }
 /* partie footer */
 .footer-container{
     display: flex;
     flex-direction: row;
+    background-color: var(--main-bg-color);
     
 }
 .footer-column{
@@ -363,7 +384,7 @@ h1{
         font-size: 13px;
     }
     /* taille carte activités */
-    .activités-cards img{
+    .activites-cards img{
     width: 100%;
     height: 200px;
     border-top-left-radius: 20px;
@@ -411,17 +432,18 @@ h1{
              
     }
     .nav-links a{
-        display: block;
+        
         width: 50%;
         margin: 0 ;
         display: flex;
         justify-content: center;
-        align-items: center;      
+        align-items: center;   
+        padding-bottom: 15px;   
     }
     .nav-links a:hover{
-        border-bottom:2px solid #0065FC;
+        border-bottom:2px solid var(--main-color);
         border-top:none;
-        color:#0065FC;
+        color:var(--main-color);
         
     }
     /* section formulaire de recherche */
@@ -470,6 +492,7 @@ h1{
     .hebergements-and-populaires {
         flex-direction: column-reverse; 
         gap: 30px;
+        
     }
     .hebergements-and-populaires section {
         padding: 0;
@@ -486,17 +509,20 @@ h1{
     .populaires-cards a {
         width: 100%;
     }
+    .hebergements-and-populaires .hebergements{
+        background-color: #FFFFFF;
+    }
     /* section activités */
-    .activités-a-Marseille {
+    .activites-a-Marseille {
         padding: 0;
     }
-    .activités-cards{
+    .activites-cards{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 30px;
     }
-    .activités-cards a{
+    .activites-cards a{
         width: 100%;
     }
     /* section footer */
